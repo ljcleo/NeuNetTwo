@@ -2,10 +2,6 @@
 
 Neural Network &amp; Deep Learning Final Project (Part I)
 
-## Cityscapes path   
-
-utils/config.py has the dataset/directory information. Please update CITYSCAPES_DIR as the preferred Cityscapes directory. You can download this dataset from https://www.cityscapes-dataset.com/.
-
 ## Inference on cityscapes
 
 To run inference, you should first put the model in the the directory `checkpoints/`, then put the images that you want into the directory `data/leftImg8bit`. 
