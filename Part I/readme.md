@@ -2,7 +2,7 @@
 
 Neural Network &amp; Deep Learning Final Project (Part I)
 
-## Inference on cityscapes
+## Inference on your own data-set
 
 To run inference, you should first put the model in the the directory `checkpoints/`, then put the images that you want into the directory `data/leftImg8bit`. 
 
