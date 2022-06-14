@@ -17,10 +17,9 @@ Run voc_annotation.py and you will derive 2 files, 2007_train.txt and 2007_val.t
 3. Training  
 You can modify train.py to train in different ways. For example,
 - **Task a:** pretrain=False
-- **Task b:** pretrain=True, change _./net/resnet50.py_ row 119 to
+- **Task b:** pretrain=True, put file _resnet50-19c8e357.pth_ into _./model_data/_ and change _./net/resnet50.py_ row 119 to
 ```
-state_dict = load_state_dict_from_url("https://download.pytorch.org/models/resnet50-19c8e357.pth", model_dir="./model_data")
-model.load_state_dict(state_dict)
+model.load_state_dict("./model_data/resnet50-19c8e357.pth")
 ```
 - **Task c:** pretrain=True, and put file _coco_mask_r-cnn_res50.pth_ into _./model_data/_
 
