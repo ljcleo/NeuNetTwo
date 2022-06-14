@@ -221,7 +221,7 @@ class EvalCallback():
                 f.write("\n")
             
             plt.figure()
-            plt.plot(self.epoches, self.maps, 'red', linewidth = 2, label='train map')
+            plt.plot(self.epoches, self.maps, 'red', linewidth = 2, label='val map')
 
             plt.grid(True)
             plt.xlabel('Epoch')
