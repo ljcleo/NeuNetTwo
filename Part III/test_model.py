@@ -26,7 +26,7 @@ def main(model_name) -> None:
 
     from csv import writer
 
-    with (get_path(root_path, 'result') /
+    with (get_path(root_path, 'out') /
           f'{config.model_name}.csv').open('w', encoding='utf8', newline='') as f:
         w = writer(f)
         w.writerow(('loss', 'top1_acc', 'top5_acc'))
